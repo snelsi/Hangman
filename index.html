@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Hangman</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap_style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="js/game.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="context d-flex">
+        <div class="container-fluid d-flex align-items-center justify-content-center">
+            <div class="card rounded-lg" style="width: 400px">
+                <div class="card-body d-flex flex-column">
+                    <h1 class="card-title text-center">Hangman</h1>
+                    <p class="text-muted text-center">A simple JavaScript game</p>
+                    <img src="img/noose.svg" class="img-fluid mx-auto" style="width: 40%;" alt="">
+                    <button type="button" class="btn btn-primary w-100 mt-4 rounded-pill" id="playBtn">Play</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="area">
+        <ul class="circles mb-0">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>

@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Sass Compile",
+            "type": "shell",
+            "command": "node-sass css/bootstrap_style.scss css/bootstrap_style.css",
+            "group": "build"
+        }
+    ]
+}
