@@ -14,6 +14,7 @@ self.addEventListener('install', function (e) {
                 'node_modules/jquery/dist/jquery.min.js',
                 'node_modules/@fortawesome/fontawesome-free/js/all.min.js',
                 'js/game.js',
+                'js/words.json',
                 'img/noose.svg',
                 'img/icon512.png',
                 'img/icon192.png',
