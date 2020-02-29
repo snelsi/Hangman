@@ -2,16 +2,16 @@
     "short_name": "Hangman",
     "icons": [
         {
-            "src": "/img/icon192.png",
+            "src": "img/icon192.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "/img/icon512.png",
+            "src": "img/icon512.png",
             "type": "image/png",
             "sizes": "512x512"
         }
     ],
-    "start_url": "/index.html",
+    "start_url": "index.html",
     "display": "fullscreen"
 }
