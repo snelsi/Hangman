@@ -6,6 +6,7 @@ self.addEventListener('install', function (e) {
                 'home.html',
                 'game.html',
                 'game-over.html',
+                'success.html',
                 'css/bootstrap_style.css',
                 'css/style.css',
                 'node_modules/bootstrap/dist/css/bootstrap.min.css',
