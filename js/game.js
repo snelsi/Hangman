@@ -10,7 +10,6 @@ $(document).ready(function main() {
                 } while (randHistory.indexOf(rand) != -1);
                 randHistory.push(rand);
                 word = data[rand].toUpperCase();
-                console.log(word);
                 var wordSplit = word.split('');
                 var hp = 7;
                 $('#score').text(score);
