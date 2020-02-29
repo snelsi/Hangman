@@ -146,3 +146,15 @@ body{
 .rounded-lg{
     border-radius: 24px !important;
 }
+
+#word{
+    letter-spacing: 5px;
+}
+
+html{
+    overflow: hidden;
+}
+
+.guessLetter{
+    width: 40px;
+}
