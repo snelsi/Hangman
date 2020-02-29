@@ -1,4 +1,4 @@
-data = ["fly", "stairs", "socks", "boy", "beak", "feet", "person", "whale", "bike", "lips", "bench", "ear", "carrot", "snowman", "circle", "fish", "night", "sea", "cloud", "star", "button", "book", "woman", "knee", "pie", "finger", "snake", "bird", "dog", "spoon", "ship", "lamp", "broom", "boat", "rocket", "box", "hair", "ghost", "house", "tail", "banana", "candle", "beach", "milk", "ring", "square", "music", "key", "bear", "oval", "bug"]
+var data = ["fly", "stairs", "socks", "boy", "beak", "feet", "person", "whale", "bike", "lips", "bench", "ear", "carrot", "snowman", "circle", "fish", "night", "sea", "cloud", "star", "button", "book", "woman", "knee", "pie", "finger", "snake", "bird", "dog", "spoon", "ship", "lamp", "broom", "boat", "rocket", "box", "hair", "ghost", "house", "tail", "banana", "candle", "beach", "milk", "ring", "square", "music", "key", "bear", "oval", "bug"]
 $(document).ready(function main() {
     $('.container-fluid').load('./home.html', function () {
         var score = 0;
@@ -6,7 +6,7 @@ $(document).ready(function main() {
         $('#playBtn').click(function game() {
             $('.container-fluid').load('./game.html', function () {
                 do {
-                    var rand = Math.floor(Math.random() * 99);
+                    var rand = Math.floor(Math.random() * 50);
                 } while (randHistory.indexOf(rand) != -1);
                 randHistory.push(rand);
                 word = data[rand].toUpperCase();
