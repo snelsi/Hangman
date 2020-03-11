@@ -3,7 +3,7 @@ import { getWord as generateWord, useSet } from "scripts";
 
 export const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-const defaultLives = 8;
+const defaultLives = 10;
 const defaultMinWordLength = 3;
 const defaultMaxWordLength = 5;
 
