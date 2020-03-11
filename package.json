@@ -1,6 +1,6 @@
 {
   "name": "hangman",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
@@ -16,17 +16,17 @@
     "typescript": "3.8.3"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
     "@types/node": "^13.9.0",
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
     "@types/styled-components": "^5.0.1",
-    "@typescript-eslint/parser": "^2.22.0",
     "@typescript-eslint/eslint-plugin": "^2.22.0",
-    "eslint-plugin-react": "^7.19.0",
+    "@typescript-eslint/parser": "^2.22.0",
+    "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0"
   },
   "eslintConfig": {
