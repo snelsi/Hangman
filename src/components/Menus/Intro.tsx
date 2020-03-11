@@ -10,14 +10,10 @@ interface IntroProps {
 export const Intro: React.FC<IntroProps> = ({ onPlay }) => (
   <Main>
     <h1>Hangman</h1>
-    <Label>A simple JavaScript game</Label>
+    <p>A simple JavaScript game</p>
     <GallowsIcon />
     <Button autoFocus onClick={onPlay}>
       Play
     </Button>
   </Main>
 );
-
-const Label = styled.p`
-  margin-bottom: 2.5rem;
-`;
