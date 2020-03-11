@@ -1,5 +1,6 @@
 import React from "react";
 import { Difficulty } from "components";
+import { Menu, NewGame, SettingsButton } from "components/DropdownMenu";
 import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 import { styled } from "@material-ui/core/styles";
