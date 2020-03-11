@@ -14,6 +14,8 @@ export const Word: React.FC<WordProps> = ({ word }) => (
 );
 
 const WordBlock = styled.h2`
+  display: flex;
+  justify-content: center;
   font-size: 2rem;
   font-weight: 400;
 `;
