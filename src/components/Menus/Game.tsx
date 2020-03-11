@@ -4,12 +4,21 @@ import { Hearts, Main, KeyBoard, Word, GameOver, Guessed } from "components";
 import { Options } from "components/DropdownMenu";
 import { useHangman } from "scripts";
 
+export type Difficulty = "easy" | "normal" | "hard";
+
 export const Game: React.FC = () => {
+  const [difficulty, setDifficulty] = React.useState<Difficulty>("easy");
+  const HangmanOptions = React.useMemo(() => {
+    if (difficulty === "hard") return { minWordLength: 6, maxWordLength: 9 };
+    if (difficulty === "normal") return { minWordLength: 4, maxWordLength: 6 };
+    return { minWordLength: 3, maxWordLength: 5 };
+  }, [difficulty]);
+
   const [
     word,
     guessLetter,
     { guessedLetters, startNewGame, score, livesLeft, maxLives, mode, getNewWord },
-  ] = useHangman();
+  ] = useHangman(HangmanOptions);
 
   React.useEffect(() => {
     const handleKeyPress = ({ key }) => guessLetter(key.toLowerCase());
@@ -18,13 +27,19 @@ export const Game: React.FC = () => {
   }, [guessLetter]);
 
   if (mode === "Guessed") return <Guessed word={word} getNewWord={getNewWord} score={score} />;
-  if (mode === "Loose") return <GameOver word={word} onNewGame={startNewGame} score={score} />;
+  if (mode === "Loose") {
+    return <GameOver word={word} onNewGame={() => startNewGame(HangmanOptions)} score={score} />;
+  }
 
   return (
     <Main>
       <Score>Score: {score}</Score>
       <OptionsButton>
-        <Options onNewGame={startNewGame} />
+        <Options
+          difficulty={difficulty}
+          setDifficulty={setDifficulty}
+          onNewGame={() => startNewGame(HangmanOptions)}
+        />
       </OptionsButton>
       <Word word={word} />
 
