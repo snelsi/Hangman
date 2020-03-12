@@ -45,12 +45,14 @@ export const Options: React.FC<OptionsProps> = ({ difficulty, setDifficulty, onN
 const DifficultySelection = styled(ButtonGroup)({
   height: "50px",
   marginBottom: "8px",
+  width: "100%",
 });
 
 const ModeButton = styled(Button)({
   borderColor: "#525252",
   color: "var(--text-white, white)",
   height: "100%",
+  width: "100%",
   "&:disabled": {
     backgroundColor: "#28a745",
     color: "var(--text-white, white)",
