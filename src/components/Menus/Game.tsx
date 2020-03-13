@@ -10,7 +10,7 @@ export const Game: React.FC = () => {
   const [difficulty, setDifficulty] = React.useState<Difficulty>("easy");
   const HangmanOptions = React.useMemo(() => {
     if (difficulty === "hard") return { minWordLength: 6, maxWordLength: 9 };
-    if (difficulty === "normal") return { minWordLength: 4, maxWordLength: 6 };
+    if (difficulty === "normal") return { minWordLength: 4, maxWordLength: 7 };
     return { minWordLength: 3, maxWordLength: 5 };
   }, [difficulty]);
 
