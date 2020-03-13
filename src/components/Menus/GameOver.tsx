@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { styled as style } from "@material-ui/core/styles";
-import { Button, GameOverIcon, Main } from "components";
+import { Button, GameOverIcon, Main, popup } from "components";
 
 export interface GameOverProps {
   word: string;
@@ -21,6 +21,7 @@ export const GameOver: React.FC<GameOverProps> = ({ word, onNewGame, score }) =>
 );
 
 const Card = styled(Main)`
+  animation: ${popup} 0.25s linear;
   background-color: #dc3545;
   color: #f8f9fa;
 

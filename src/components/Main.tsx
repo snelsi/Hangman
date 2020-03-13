@@ -1,4 +1,28 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+
+export const popup = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(1.02);
+  }
+  66% {
+    transform: scale(0.99);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
 
 export const Main = styled.main`
   width: 100%;
@@ -23,6 +47,9 @@ export const Main = styled.main`
 
   justify-content: space-between;
 
+  & > * {
+    animation: ${fadeIn} 0.25s linear;
+  }
   & > h1 {
     margin-bottom: 0.75rem;
   }

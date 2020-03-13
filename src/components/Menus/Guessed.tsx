@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { styled as style } from "@material-ui/core/styles";
-import { Button, GuessedIcon, Main } from "components";
+import { Button, GuessedIcon, Main, popup } from "components";
 import confetti from "canvas-confetti";
 
 const leftRightConfetti = () => {
@@ -40,6 +40,7 @@ export const Guessed: React.FC<GuessedProps> = ({ word, getNewWord, score }) => 
 };
 
 const Card = styled(Main)`
+  animation: ${popup} 0.25s linear;
   background-color: #28a745;
   color: #f8f9fa;
   & p {
