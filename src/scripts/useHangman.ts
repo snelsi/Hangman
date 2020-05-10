@@ -63,7 +63,7 @@ export const useHangman = ({
    * Unique letters in the word, that haven't been guessed yet.
    */
   const unguessedLeft = React.useMemo(
-    () => [...new Set(word)].filter(letter => !has(letter)).length,
+    () => [...new Set(word)].filter((letter) => !has(letter)).length,
     [word, has],
   );
 
@@ -107,7 +107,7 @@ export const useHangman = ({
     if (mode === "Guessed" || mode === "Loose") return word;
     return word
       .split("")
-      .map(letter => (has(letter) ? letter : "_"))
+      .map((letter) => (has(letter) ? letter : "_"))
       .join("");
   }, [word, has, mode]);
 
