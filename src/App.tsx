@@ -2,14 +2,14 @@ import * as React from "react";
 import styled from "styled-components";
 import { Background, Game, Intro } from "components";
 
-import gitGubIcon from "components/Icons/gitGubIcon.svg";
+import githubIcon from "components/Icons/githubIcon.svg";
 
 function App() {
   const [page, setPage] = React.useState<IPages>("Intro");
   return (
     <Background>
       <Link href="https://github.com/snelsi/hangman" target="_blank" rel="noopener">
-        <img src={gitGubIcon} alt="gitHub" />
+        <img src={githubIcon} alt="Github" />
       </Link>
       <Pages page={page} setPage={setPage} />
     </Background>
